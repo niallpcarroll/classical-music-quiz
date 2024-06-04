@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function () {
+
+    const timerDisplay = document.getElementById("timer");
+    
+    let currentQuestion = {};
+    let correctAnswers = 0;
+    let questionCounter = 0;
+    let timerInterval;
+    
+
 const questions = [{
     question: "Where was Johann Sebastian Bach born?",
     choices: ["Eisenach", "Leipzig", "Köthen", "Arnstadt"],
@@ -63,5 +73,52 @@ const questions = [{
     choices: ["Baroque", "Renaissance", "Romantic", "Classical"],
     correct: 1
 },
-
+{
+    question: "Which English composer is best known for his suite 'The Planets'?",
+    choices: ["Edward Elgar", "John Ireland",  "Hubert Parry", "Gustav Holst"],
+    correct: 3
+},
+{
+    question: "Niccolò Paganini was considered a master of which instrument?",
+    choices: ["Violin", "Piano", "Oboe", "Trumpet"],
+    correct: 0
+},
+{
+    question: "Which composer's works include the 'Slavonic Dances'?",
+    choices: ["Brahms", "Rachmaninoff", "Stravinsky", "Dvořák"],
+    correct: 3
+},
+{
+    question: "One of Mozart's last compositions, a concerto in A major, features which solo instrument?",
+    choices: ["French horn", "Clarinet", "Cello", "Piano"],
+    correct: 2
+},
+{
+    question: "Which tempo indication means that the music should be played at a 'walking pace'?",
+    choices: ["Allegro", "Andante", "Presto", "Adagio"],
+    correct: 1
+},
+{
+    question: "The thirteenth movement of 'Carnival of the Animals' by Saint-Saëns represents which bird?",
+    choices: ["Eagle", "Cuckoo", "Swan", "Robin"],
+    correct: 2
+},
+{
+    question: "Schubert's 'Piano Quintet in A major' is nicknamed after which fish?",
+    choices: ["Salmon", "Eel", "Pike", "Trout"],
+    correct: 3
+},
 ]
+
+function showQuestion() {
+    const questionText = document.getElementById("question-text");
+}
+
+function startTimer() {
+    clearInterval(timerInterval); // Clear existing timer interval
+
+    let timeLeft = questionTime;
+
+    timerInterval = setInterval(() => {
+      timeLeft--;
+      timerDisplay.textContent = timeLeft;

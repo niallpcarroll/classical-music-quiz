@@ -12,14 +12,14 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    background-color: #680202;
+    background-color: #600b0b;
     color: 	#FAF0E6;
     font-family: "Radio Canada", sans-serif;
 }
 
 /* Header */
 header {
-    background-color: #680202;
+    background-color: #600b0b;
     color: 5B0707;
     padding: 0 1rem;
     position: fixed;
@@ -34,4 +34,11 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
+}
+
+.outer-container {
+    border: 2px solid gold;
+    width: 70%;
+    left: 15%;
+    padding: 20%;
 }

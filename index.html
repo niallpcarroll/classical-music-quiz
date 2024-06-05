@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/script.js"></script>
     <!-- Title -->
     <title>Classical Music Quiz</title>
     <!-- Favicon -->
@@ -13,28 +14,28 @@
 
 <body>
 
-    <head>
+    <header class="header-image">
         <h1>Classical Music Quiz</h1>
         <p>Can you tell your Bach from your Offenbach?</p>
-    </head>
+    </header>
 
-   <div class="outer-container">
-    <div id="quiz">
-        <div id="timer">Time Remaining: <span id="time-value">20</span> seconds</div>
-        <h3 id="question-text">Questions appear here</h3>
-        <div id="answer-buttons" class="answer-buttons">
-            <button class="answer" data-index="0">Answer 1</button>
-            <button class="answer" data-index="1">Answer 2</button>
-            <button class="answer" data-index="2">Answer 3</button>
-            <button class="answer" data-index="3">Answer 4</button>
-
+    <div class="container">
+        <div id="quiz" class="hide">
+            <div id= "question" class="question-div">
+                <h3 id="question-text">Questions appear here</h3>
+            </div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn" data-index="0">Answer 1</button>
+                <button class="btn" data-index="1">Answer 2</button>
+                <button class="btn" data-index="2">Answer 3</button>
+                <button class="btn" data-index="3">Answer 4</button>
+            </div>
         </div>
+
+
     </div>
 
-
-   </div>
-    <script src="assets/js/script.js"></script>
-</div>
+    </div>
 </body>
 
 </html>

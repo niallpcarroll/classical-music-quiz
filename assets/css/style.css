@@ -75,8 +75,9 @@ p {
 .container {
     border: 5px solid #faf0e6;
     width: 80%;
-    left: 15%;
+    right: 20%
     padding: 10%;
+    padding-right: 0;
     margin-bottom: 100px;
     height: 300px;
     border-radius: 10px;
@@ -88,6 +89,8 @@ h3 {
 
 .btn {
     padding: 5px;
+    width: auto;
+    
 
 }
 
@@ -96,6 +99,8 @@ h3 {
     border: 3px solid #faf0e6;
     border-radius: 5px;
     margin-top: 10px;
-    display: flex;
+    column-count: auto;
     columns: 2;
+    width: 80%;
+    left: 10%;
     

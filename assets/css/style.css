@@ -74,8 +74,8 @@ header > p {
     text-align: center;
     padding: 10px;
     color: #faf0e6;
-    font-size: 150%;
-    font-weight: 600;
+    font-size: 120%;
+    font-weight: 500;
     font-style: italic;
     text-shadow: 3px 3px #281b1b;
 }
@@ -156,8 +156,20 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    text-align: justify;
 }
 
 .hide {
     display: none;
+}
+
+.quiz-button {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    width: 100vw;
+    padding: 10px;
 }

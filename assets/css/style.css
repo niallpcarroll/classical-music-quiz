@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 * {
     padding: 0;
@@ -11,8 +16,10 @@
 body {
     padding: 0;
     margin: 0;
-    margin-left: -20px;
-    min-height: 100vh;
+    /*margin-left: -20px;*/
+    width: 100vw;
+    /*min-*/
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,11 +83,21 @@ p {
 .container {
     /*margin-top: 50px;*/
     border: 5px solid #faf0e6;
-    width: 70vw;
+    width: 80vw;
     margin: auto;
     /*margin-bottom: 100px;*/
-    height: 230px;
+    /*height: 230px;*/
     border-radius: 10px;
+    box-shadow: 0 0 10px 2px;
+    padding-bottom: 20px;
+}
+
+.container-image {
+    background-image: url(/assets/images/violin-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 h3 {
@@ -93,21 +110,25 @@ h3 {
     margin: auto;
 }
 
+.answers {
+    background-color: #281b1b;
+}
+
 .btn {
     padding: 5px;
     width: auto;
+    background-color: #faf0e6;
+    border-radius: 5px;
     /*display: flex;
     justify-content: space-around;*/
 }
 
 .btn-grid {
-    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 35vw);
+    padding: 10px;
     border: 3px solid #faf0e6;
     border-radius: 5px;
-    margin-top: 10px;
-    row-gap: auto;
-    rows: 2;
-    width: 60vw;
-    margin: auto;
-    justify-content: space-between;
+    margin: 20px 0;
+    gap: 10px;
 }

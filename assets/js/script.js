@@ -108,6 +108,21 @@ const questions = [{
     choices: ["Salmon", "Eel", "Pike", "Trout"],
     correct: 3
 },
+{
+    question: "What nationality was the composer Edvard Grieg?",
+    choices: ["Norwegian", "Swiss", "German", "Danish"],
+    correct: 0
+},
+{
+    question: "Chopin's music was composed chiefly for which instrument?",
+    choices: ["Violin", "Piano", "Organ", "Cello"],
+    correct: 1
+},
+{
+    question: "Which Beethoven symphony is known as the 'Choral Symphony'?",
+    choices: ["Sixth", "Seventh", "Eighth", "Ninth"],
+    correct: 3
+},
 ]
 
 function showQuestion() {

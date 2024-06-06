@@ -121,6 +121,19 @@ h3 {
     border-radius: 5px;
     /*display: flex;
     justify-content: space-around;*/
+    border: 2px solid black;
+}
+
+.btn:hover {
+    border-color: lightblue;
+}
+
+.btn.correct {
+    background-color: green;
+}
+
+.btn.wrong {
+    background-color: red;
 }
 
 .btn-grid {

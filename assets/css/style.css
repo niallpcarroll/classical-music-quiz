@@ -70,7 +70,7 @@ h1 {
     text-shadow: 4px 2px #281b1b;
 }
 
-p {
+header > p {
     text-align: center;
     padding: 10px;
     color: #faf0e6;
@@ -144,4 +144,20 @@ h3 {
     border-radius: 5px;
     margin: 20px 0;
     gap: 10px;
+}
+
+.start-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
 }

@@ -1,11 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
+const startButton = document.getElementById("start-btn")
+const questionContainerElement = document.getElementsByClassName("container")
 
-    const timerDisplay = document.getElementById("timer");
+startButton.addEventListener("click", startGame)
+
+    function startGame() {
+console.log("Started")
+startButton.classList.add("hide")
+
+    }
+
+    function setNextQuestion() {
+
+    }
+
+    function selectAnswer () {
+
+    }
     
-    let currentQuestion = {};
-    let correctAnswers = 0;
-    let questionCounter = 0;
-    let timerInterval;
+    
+   
     
 
 const questions = [{
@@ -124,16 +137,3 @@ const questions = [{
     correct: 3
 },
 ]
-
-function showQuestion() {
-    const questionText = document.getElementById("question-text");
-}
-
-function startTimer() {
-    clearInterval(timerInterval); // Clear existing timer interval
-
-    let timeLeft = questionTime;
-
-    timerInterval = setInterval(() => {
-      timeLeft--;
-      timerDisplay.textContent = timeLeft;

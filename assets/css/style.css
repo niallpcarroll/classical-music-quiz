@@ -11,9 +11,10 @@
 body {
     padding: 0;
     margin: 0;
+    margin-left: -20px;
     min-height: 100vh;
     display: flex;
-    /*justify-content: center;*/
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     /* Generic project styles */
@@ -73,12 +74,12 @@ p {
 }
 
 .container {
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     border: 5px solid #faf0e6;
     width: 70vw;
     margin: auto;
-    margin-bottom: 100px;
-    height: 250px;
+    /*margin-bottom: 100px;*/
+    height: 230px;
     border-radius: 10px;
 }
 
@@ -87,19 +88,16 @@ h3 {
 }
 
 .question-div {
-    padding: 20px;
+    padding: 15px;
+    width: 75vw;
+    margin: auto;
 }
 
 .btn {
-    padding: 15px;
+    padding: 5px;
     width: auto;
-    display: flex;
-    justify-content: space-between;
-    
-    
-    
-    
-
+    /*display: flex;
+    justify-content: space-around;*/
 }
 
 .btn-grid {
@@ -107,9 +105,9 @@ h3 {
     border: 3px solid #faf0e6;
     border-radius: 5px;
     margin-top: 10px;
-    column-count: auto;
-    columns: 2;
-    width: 50vw;
+    row-gap: auto;
+    rows: 2;
+    width: 60vw;
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-between;
 }

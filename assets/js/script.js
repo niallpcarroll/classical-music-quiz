@@ -1,16 +1,14 @@
-function startGame() {
+document.addEventListener("DOMContentLoaded", function() {
 
-}
-
-function setNextQuestion() {
-
-}
-
-function selectAnswer() {
-
-}
+    const questionElement = document.getElementById("question-text");
+    const choices = Array.from(document.querySelectorAll(".answers"));
 
 
+    let currentQuestion = {};
+    let score = 0;
+    let questionCounter = 0;
+    let availableQuestions = [];
+    let timerInterval;
 
 
 
@@ -129,4 +127,34 @@ const questions = [{
         choices: ["Sixth", "Seventh", "Eighth", "Ninth"],
         correct: 3
     },
-]
+];
+
+const correctAnswer = 1;
+const numberOfQuestions = 10;
+const questionTimer= 20;
+
+// Start the game
+startGame();
+
+// Function to start the game
+function startGame() {
+  questionCounter = 0;
+  score = 0;
+  availableQuestions = []; // Reset available questions array
+
+  // Select 10 random questions
+  for (let i = 0; i < 10; i++) {
+    const randomIndex = Math.floor(Math.random() * questions.length);
+    const randomQuestion = questions[randomIndex];
+    availableQuestions.push(randomQuestion);
+    // Remove the selected question from the questions array to prevent duplicates
+    questions.splice(randomIndex, 1);
+  }
+
+  getNewQuestion();
+}
+
+
+
+
+})
